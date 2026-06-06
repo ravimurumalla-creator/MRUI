@@ -291,7 +291,7 @@ function App() {
             style={{
               padding: "22px",
               borderRadius: "20px",
-              background: "#5314c8",
+              background: "#0b30e8",
               border: "1px solid #e2e8f0",
               boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
             }}
@@ -307,13 +307,13 @@ function App() {
             style={{
               padding: "22px",
               borderRadius: "20px",
-              background: "#5818c7",
+              background: "#0b30e8",
               border: "1px solid #e2e8f0",
               boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
             }}
           >
             <h2 style={{ marginTop: 0 }}>About Me</h2>
-            <p style={{ lineHeight: 1.7, color: "#334155" }}>
+            <p style={{ lineHeight: 1.7, color: "#000307" }}>
               I built this project to show a practical medical document intelligence workflow using modern cloud
               deployment, API design, and a polished user interface.
             </p>
