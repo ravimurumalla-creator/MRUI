@@ -128,7 +128,7 @@ function App() {
   return (
     <div
       style={{
-        minHeight: "120vh",
+        minHeight: "150vh",
         background:
           "linear-gradient(180deg, #02111d 0%, #081c2d 36%, #f8fbff 36%, #ffffff 100%)",
         fontFamily: "Inter, Arial, sans-serif",
