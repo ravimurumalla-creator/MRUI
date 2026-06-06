@@ -291,7 +291,7 @@ function App() {
             style={{
               padding: "22px",
               borderRadius: "20px",
-              background: "#ffffff",
+              background: "#5314c8",
               border: "1px solid #e2e8f0",
               boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
             }}
@@ -307,7 +307,7 @@ function App() {
             style={{
               padding: "22px",
               borderRadius: "20px",
-              background: "#ffffff",
+              background: "#5818c7",
               border: "1px solid #e2e8f0",
               boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
             }}
@@ -322,7 +322,7 @@ function App() {
 
         <section style={sectionStyle}>
           <h2 style={{ marginTop: 0 }}>1. Upload PDF</h2>
-          <p style={{ color: "#64748b", marginTop: "-4px" }}>Choose a PDF document to begin the workflow.</p>
+          <p style={{ color: "#01050c", marginTop: "-4px" }}>Choose a PDF document to begin the workflow.</p>
           <input type="file" accept="application/pdf" onChange={handleFileChange} />
           <div style={{ marginTop: "14px" }}>
             <button
@@ -338,7 +338,7 @@ function App() {
               style={{
                 marginTop: "12px",
                 padding: "12px 14px",
-                background: "#f8fafc",
+                background: "#4012b4",
                 borderRadius: "12px",
                 border: "1px solid #e2e8f0",
               }}
@@ -350,7 +350,7 @@ function App() {
 
         <section style={sectionStyle}>
           <h2 style={{ marginTop: 0 }}>2. Extract Text</h2>
-          <p style={{ color: "#64748b", marginTop: "-4px" }}>Run extraction on the uploaded document.</p>
+          <p style={{ color: "#00050c", marginTop: "-4px" }}>Run extraction on the uploaded document.</p>
           <button
             onClick={handleExtract}
             disabled={loading || !documentId}
