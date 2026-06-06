@@ -128,7 +128,7 @@ function App() {
   return (
     <div
       style={{
-        minHeight: "100vh",
+        minHeight: "120vh",
         background:
           "linear-gradient(180deg, #02111d 0%, #081c2d 36%, #f8fbff 36%, #ffffff 100%)",
         fontFamily: "Inter, Arial, sans-serif",
@@ -297,7 +297,7 @@ function App() {
             }}
           >
             <h2 style={{ marginTop: 0 }}>About the App</h2>
-            <p style={{ lineHeight: 1.7, color: "#334155" }}>
+            <p style={{ lineHeight: 1.7, color: "rgb(1, 7, 16)" }}>
               This application helps users upload medical PDFs, extract text, and ask questions in a secure and
               intuitive way. It is designed to feel like a real medical AI product with a clean and professional
               experience.
