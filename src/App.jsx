@@ -148,7 +148,7 @@ function App() {
     textAlign: "center",
   }}
 >
-  <div>
+  
     <div style={{ fontSize: "1.55rem", fontWeight: 900, letterSpacing: "0.4px" }}>
       Medical AI Intelligence
     </div>
