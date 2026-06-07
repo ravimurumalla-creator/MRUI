@@ -149,12 +149,14 @@ function App() {
   }}
 >
   
+  <div>
     <div style={{ fontSize: "1.55rem", fontWeight: 900, letterSpacing: "0.4px" }}>
       Medical AI Intelligence
     </div>
     <div style={{ fontSize: "1.02rem", color: "#94a3b8", marginTop: "6px" }}>
       Secure document understanding for healthcare workflows
     </div>
+  </div>
    
         <div
           style={{
