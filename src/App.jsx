@@ -73,6 +73,7 @@ function App() {
         border: "1px solid rgba(148,163,184,0.18)",
         color: "#e2e8f0",
         boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+        textAlign: "center",
       }}
     >
       <div style={{ fontSize: "1.5rem", fontWeight: 700 }}>{value}</div>
@@ -85,23 +86,25 @@ function App() {
       style={{
         padding: "18px",
         borderRadius: "18px",
-        background: "#ffffff",
-        border: "1px solid #e2e8f0",
-        boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
+        background: "rgba(255,255,255,0.08)",
+        border: "1px solid rgba(148,163,184,0.18)",
+        color: "#e2e8f0",
+        boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
       }}
     >
-      <h3 style={{ marginTop: 0, marginBottom: "8px", color: "#0f172a" }}>{title}</h3>
-      <p style={{ margin: 0, color: "#475569", lineHeight: 1.7 }}>{text}</p>
+      <h3 style={{ marginTop: 0, marginBottom: "8px", color: "#f8fafc" }}>{title}</h3>
+      <p style={{ margin: 0, color: "#cbd5e1", lineHeight: 1.7 }}>{text}</p>
     </div>
   );
 
   const sectionStyle = {
     marginBottom: "24px",
     padding: "22px",
-    border: "1px solid #e2e8f0",
     borderRadius: "20px",
-    background: "#ffffff",
-    boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
+    background: "rgba(255,255,255,0.08)",
+    border: "1px solid rgba(148,163,184,0.18)",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.12)",
+    color: "#e2e8f0",
   };
 
   const inputStyle = {
@@ -129,8 +132,7 @@ function App() {
     <div
       style={{
         minHeight: "150vh",
-        background:
-          "linear-gradient(180deg, #02111d 0%, #081c2d 100%)",
+        background: "linear-gradient(180deg, #02111d 0%, #081c2d 100%)",
         fontFamily: "Inter, Arial, sans-serif",
       }}
     >
@@ -168,17 +170,12 @@ function App() {
 
       <section
         style={{
-          display: "flex",
-          //.gridTemplateColumns: "1.05fr 0.95fr",./</div>
-          gap: "24px",
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "40px 20px 26px",
-          alignItems: "center",
+          padding: "32px 20px 20px",
         }}
       >
-        <div>
-          <div style={{ position: "center" }}>
+        <div style={{ position: "relative" }}>
           <div
             style={{
               position: "absolute",
@@ -186,54 +183,64 @@ function App() {
               background:
                 "radial-gradient(circle at 30% 30%, rgba(34,211,238,0.25), transparent 55%), radial-gradient(circle at 70% 70%, rgba(59,130,246,0.18), transparent 50%)",
               filter: "blur(14px)",
+              zIndex: 0,
             }}
           />
           <img
             src="/medical_ai_hero.png"
             alt="Medical AI illustration"
             style={{
-              position: "center",
+              position: "relative",
+              zIndex: 1,
               width: "100%",
               borderRadius: "26px",
               boxShadow: "0 30px 80px rgba(0,0,0,0.28)",
               border: "1px solid rgba(255,255,255,0.12)",
+              display: "block",
             }}
           />
-        </div>       
+        </div>
+
+        <div style={{ textAlign: "center", marginTop: "28px" }}>
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4vw, 4.6rem)",
               lineHeight: 1.03,
               margin: 0,
               color: "#f8fafc",
-              maxWidth: "40ch",
             }}
           >
             AI-powered medical document analysis.
           </h1>
           <p
             style={{
-              marginTop: "18px",
+              margin: "18px auto 0",
               fontSize: "1.05rem",
-              lineHeight: 1.75,
+              lineHeight: 1.8,
               color: "#cbd5e1",
-              maxWidth: "1250px",
+              maxWidth: "920px",
             }}
           >
-            Upload a PDF, extract its contents, and ask questions through a polished healthcare-grade
-            interface designed for clarity and trust.
+            Upload a PDF, extract its contents, and ask questions through a polished healthcare-grade interface
+            designed for clarity and trust.
           </p>
-          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", marginTop: "26px" }}>
-            {statCard("PDF", "Upload documents")}
-            {statCard("AI", "Ask questions")}
-            {statCard("S3", "Secure storage")}
-          </div>
         </div>
 
-       
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: "18px",
+            marginTop: "28px",
+          }}
+        >
+          {statCard("PDF", "Upload documents")}
+          {statCard("AI", "Ask questions")}
+          {statCard("S3", "Secure storage")}
+        </div>
       </section>
 
-      <main style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 20px 64px" }}>
+      <main style={{ maxWidth: "1100px", margin: "0 auto", padding: "10px 20px 64px" }}>
         <section
           style={{
             display: "grid",
@@ -255,33 +262,17 @@ function App() {
             marginBottom: "24px",
           }}
         >
-          <section
-            style={{
-              padding: "22px",
-              borderRadius: "20px",
-              background: "#0b30e8",
-              border: "1px solid #e2e8f0",
-              boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
-            }}
-          >
+          <section style={sectionStyle}>
             <h2 style={{ marginTop: 0 }}>About the App</h2>
-            <p style={{ lineHeight: 1.7, color: "rgb(1, 7, 16)" }}>
+            <p style={{ lineHeight: 1.7, color: "#cbd5e1" }}>
               This application helps users upload medical PDFs, extract text, and ask questions in a secure and
               intuitive way. It is designed to feel like a real medical AI product with a clean and professional
               experience.
             </p>
           </section>
-          <section
-            style={{
-              padding: "22px",
-              borderRadius: "20px",
-              background: "#0b30e8",
-              border: "1px solid #e2e8f0",
-              boxShadow: "0 10px 30px rgba(15,23,42,0.05)",
-            }}
-          >
+          <section style={sectionStyle}>
             <h2 style={{ marginTop: 0 }}>About Me</h2>
-            <p style={{ lineHeight: 1.7, color: "#000307" }}>
+            <p style={{ lineHeight: 1.7, color: "#cbd5e1" }}>
               I built this project to show a practical medical document intelligence workflow using modern cloud
               deployment, API design, and a polished user interface.
             </p>
@@ -290,7 +281,7 @@ function App() {
 
         <section style={sectionStyle}>
           <h2 style={{ marginTop: 0 }}>1. Upload PDF</h2>
-          <p style={{ color: "#01050c", marginTop: "-4px" }}>Choose a PDF document to begin the workflow.</p>
+          <p style={{ color: "#cbd5e1", marginTop: "-4px" }}>Choose a PDF document to begin the workflow.</p>
           <input type="file" accept="application/pdf" onChange={handleFileChange} />
           <div style={{ marginTop: "14px" }}>
             <button
@@ -306,9 +297,10 @@ function App() {
               style={{
                 marginTop: "12px",
                 padding: "12px 14px",
-                background: "#4012b4",
+                background: "rgba(255,255,255,0.08)",
                 borderRadius: "12px",
-                border: "1px solid #e2e8f0",
+                border: "1px solid rgba(148,163,184,0.18)",
+                color: "#e2e8f0",
               }}
             >
               <strong>Document ID:</strong> <code>{documentId}</code>
@@ -318,7 +310,7 @@ function App() {
 
         <section style={sectionStyle}>
           <h2 style={{ marginTop: 0 }}>2. Extract Text</h2>
-          <p style={{ color: "#00050c", marginTop: "-4px" }}>Run extraction on the uploaded document.</p>
+          <p style={{ color: "#cbd5e1", marginTop: "-4px" }}>Run extraction on the uploaded document.</p>
           <button
             onClick={handleExtract}
             disabled={loading || !documentId}
@@ -326,12 +318,12 @@ function App() {
           >
             {loading ? "Extracting..." : "Extract"}
           </button>
-          {extractStatus && <p style={{ marginTop: "12px", color: "#334155" }}>{extractStatus}</p>}
+          {extractStatus && <p style={{ marginTop: "12px", color: "#cbd5e1" }}>{extractStatus}</p>}
         </section>
 
         <section style={sectionStyle}>
           <h2 style={{ marginTop: 0 }}>3. Ask a Question</h2>
-          <p style={{ color: "#64748b", marginTop: "-4px" }}>Query the document using natural language.</p>
+          <p style={{ color: "#cbd5e1", marginTop: "-4px" }}>Query the document using natural language.</p>
           <input
             type="text"
             value={question}
@@ -351,9 +343,10 @@ function App() {
               style={{
                 marginTop: "16px",
                 padding: "14px",
-                background: "#f8fafc",
+                background: "rgba(255,255,255,0.08)",
                 borderRadius: "12px",
-                border: "1px solid #e2e8f0",
+                border: "1px solid rgba(148,163,184,0.18)",
+                color: "#e2e8f0",
               }}
             >
               <strong>Answer:</strong>
