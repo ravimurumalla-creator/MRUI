@@ -206,7 +206,7 @@ function App() {
               lineHeight: 1.03,
               margin: 0,
               color: "#f8fafc",
-              maxWidth: "11ch",
+              maxWidth: "40ch",
             }}
           >
             AI-powered medical document analysis.
@@ -217,7 +217,7 @@ function App() {
               fontSize: "1.05rem",
               lineHeight: 1.75,
               color: "#cbd5e1",
-              maxWidth: "650px",
+              maxWidth: "1250px",
             }}
           >
             Upload a PDF, extract its contents, and ask questions through a polished healthcare-grade
