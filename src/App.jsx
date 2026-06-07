@@ -192,7 +192,7 @@ function App() {
             src="/medical_ai_hero.png"
             alt="Medical AI illustration"
             style={{
-              position: "relative",
+              position: "center",
               width: "100%",
               borderRadius: "26px",
               boxShadow: "0 30px 80px rgba(0,0,0,0.28)",
