@@ -168,8 +168,8 @@ function App() {
 
       <section
         style={{
-          display: "grid",
-          gridTemplateColumns: "1.05fr 0.95fr",
+          display: "flex",
+          //.gridTemplateColumns: "1.05fr 0.95fr",./</div>
           gap: "24px",
           maxWidth: "1200px",
           margin: "0 auto",
