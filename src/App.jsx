@@ -246,23 +246,7 @@ function App() {
               border: "1px solid rgba(255,255,255,0.12)",
             }}
           />
-          <div
-            style={{
-              position: "absolute",
-              bottom: "18px",
-              left: "18px",
-              right: "18px",
-              padding: "14px 16px",
-              borderRadius: "18px",
-              background: "rgba(2,6,23,0.72)",
-              color: "#e2e8f0",
-              backdropFilter: "blur(10px)",
-              border: "1px solid rgba(148,163,184,0.2)",
-            }}
-          >
-            Professional medical AI interface for document intelligence.
-          </div>
-        </div>
+        </div>       
       </section>
 
       <main style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 20px 64px" }}>
