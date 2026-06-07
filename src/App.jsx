@@ -178,23 +178,28 @@ function App() {
         }}
       >
         <div>
+          <div style={{ position: "relative" }}>
           <div
             style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              padding: "8px 12px",
-              borderRadius: "999px",
-              background: "rgba(45,212,191,0.12)",
-              color: "#99f6e4",
-              fontSize: "14px",
-              fontWeight: 700,
-              marginBottom: "18px",
-              border: "1px solid rgba(45,212,191,0.18)",
+              position: "absolute",
+              inset: "18px",
+              background:
+                "radial-gradient(circle at 30% 30%, rgba(34,211,238,0.25), transparent 55%), radial-gradient(circle at 70% 70%, rgba(59,130,246,0.18), transparent 50%)",
+              filter: "blur(14px)",
             }}
-          >
-            Medical Document Intelligence Platform
-          </div>
+          />
+          <img
+            src="/medical_ai_hero.png"
+            alt="Medical AI illustration"
+            style={{
+              position: "relative",
+              width: "100%",
+              borderRadius: "26px",
+              boxShadow: "0 30px 80px rgba(0,0,0,0.28)",
+              border: "1px solid rgba(255,255,255,0.12)",
+            }}
+          />
+        </div>       
           <h1
             style={{
               fontSize: "clamp(2.4rem, 4vw, 4.6rem)",
@@ -225,28 +230,7 @@ function App() {
           </div>
         </div>
 
-        <div style={{ position: "relative" }}>
-          <div
-            style={{
-              position: "absolute",
-              inset: "18px",
-              background:
-                "radial-gradient(circle at 30% 30%, rgba(34,211,238,0.25), transparent 55%), radial-gradient(circle at 70% 70%, rgba(59,130,246,0.18), transparent 50%)",
-              filter: "blur(14px)",
-            }}
-          />
-          <img
-            src="/medical_ai_hero.png"
-            alt="Medical AI illustration"
-            style={{
-              position: "relative",
-              width: "100%",
-              borderRadius: "26px",
-              boxShadow: "0 30px 80px rgba(0,0,0,0.28)",
-              border: "1px solid rgba(255,255,255,0.12)",
-            }}
-          />
-        </div>       
+       
       </section>
 
       <main style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 20px 64px" }}>
