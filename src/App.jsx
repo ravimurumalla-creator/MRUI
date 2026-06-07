@@ -130,7 +130,7 @@ function App() {
       style={{
         minHeight: "150vh",
         background:
-          "linear-gradient(180deg, #02111d 0%, #081c2d 36%, #f8fbff 36%, #ffffff 100%)",
+          "linear-gradient(180deg, #02111d 0%, #081c2d 36%, 
         fontFamily: "Inter, Arial, sans-serif",
       }}
     >
