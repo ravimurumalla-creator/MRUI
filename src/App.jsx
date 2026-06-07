@@ -137,24 +137,25 @@ function App() {
       }}
     >
       <header
-        style={{
-          maxWidth: "1200px",
-          margin: "0 auto",
-          padding: "22px 20px 0",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          color: "#e2e8f0",
-        }}
-      >
-        <div>
-          <div style={{ fontSize: "1.1rem", fontWeight: 800, letterSpacing: "0.3px" }}>
-            Medical AI Intelligence
-          </div>
-          <div style={{ fontSize: "0.9rem", color: "#94a3b8" }}>
-            Secure document understanding for healthcare workflows
-          </div>
-        </div>
+  style={{
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "22px 20px 0",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    color: "#e2e8f0",
+    textAlign: "center",
+  }}
+>
+  <div>
+    <div style={{ fontSize: "1.55rem", fontWeight: 900, letterSpacing: "0.4px" }}>
+      Medical AI Intelligence
+    </div>
+    <div style={{ fontSize: "1.02rem", color: "#94a3b8", marginTop: "6px" }}>
+      Secure document understanding for healthcare workflows
+    </div>
+   
         <div
           style={{
             fontSize: "0.9rem",
