@@ -178,7 +178,7 @@ function App() {
         }}
       >
         <div>
-          <div style={{ position: "flex" }}>
+          <div style={{ position: "center" }}>
           <div
             style={{
               position: "absolute",
